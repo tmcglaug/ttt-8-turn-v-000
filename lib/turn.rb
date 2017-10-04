@@ -10,7 +10,7 @@ def turn(board)
 else
   usr_input = gets.strip
   index = input_to_index(usr_input)
-        
+
       end
 end
 
