@@ -1,1 +1,7 @@
 #!/usr/bin/env ruby
+puts "Welcome to Tic Tac Toe!"
+puts "What move do you want to make?"
+
+usr_input = gets. strip
+
+input_to_index(usr_input)
