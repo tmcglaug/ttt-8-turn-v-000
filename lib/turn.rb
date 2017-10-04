@@ -6,6 +6,11 @@ def turn(board)
   if valid_move?(board,index) == true
         move(board,index,"X")
         display_board(board)
+
+else
+  usr_input = gets.strip
+  index = input_to_index(usr_input)
+        
       end
 end
 
