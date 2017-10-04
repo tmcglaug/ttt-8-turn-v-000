@@ -1,7 +1,17 @@
 #!/usr/bin/env ruby
+require_relative "../lib/turn.rb"
+
+
+#value = 'X'
+
 puts "Welcome to Tic Tac Toe!"
-puts "What move do you want to make?"
 
-usr_input = gets. strip
+board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 
-input_to_index(usr_input)
+
+puts "Where would you like to go?"
+
+usr_input = gets.strip
+index = input_to_index(usr_input)
+move(board,index,"X")
+display_board(board)
